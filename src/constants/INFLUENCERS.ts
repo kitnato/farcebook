@@ -1,0 +1,13 @@
+export const INFLUENCERS = 0;
+
+export const INFLUENCERS_DELTA = 1;
+
+export const INFLUENCERS_RATE = 1000;
+
+export const INFLUENCERS_RATE_DELTA = 33;
+
+export const INFLUENCERS_RATE_MINIMUM = 16.66;
+
+export const INFLUENCERS_RATE_REDUCTION = 0;
+
+export const INFLUENCERS_RATE_REDUCTION_DELTA = 1;

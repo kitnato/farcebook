@@ -1,0 +1,5 @@
+export const FOLLOWERS_DELTA = 1;
+
+export const FOLLOWERS_DELTA_MULTIPLIER = 0;
+
+export const FOLLOWERS_DELTA_MULTIPLIER_DELTA = 1;

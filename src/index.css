@@ -1,0 +1,15 @@
+body {
+  user-select: none;
+}
+
+.progress {
+  height: 1.3rem;
+}
+
+.progress-bar {
+  transition-duration: 0.2s;
+}
+
+.text-small-caps {
+  font-variant: all-small-caps;
+}
