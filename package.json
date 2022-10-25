@@ -1,6 +1,7 @@
 {
   "name": "farcebook",
   "version": "1.0.0",
+  "description": "A basic template for a React & Typescript-based idle/incremental game.",
   "license": "cc-by-sa-4.0",
   "repository": {
     "type": "git",
@@ -27,11 +28,11 @@
     "tsparticles-engine": "^2.3.3"
   },
   "devDependencies": {
-    "@types/node": "^18.11.3",
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6",
-    "@typescript-eslint/eslint-plugin": "^5.40.1",
-    "@typescript-eslint/parser": "^5.40.1",
+    "@types/node": "^18.11.5",
+    "@types/react": "^18.0.22",
+    "@types/react-dom": "^18.0.7",
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
