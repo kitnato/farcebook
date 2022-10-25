@@ -2,6 +2,20 @@
   "name": "farcebook",
   "version": "1.0.0",
   "license": "cc-by-sa-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cneuro/farcebook.git"
+  },
+  "keywords": [
+    "clicker",
+    "game",
+    "incremental",
+    "idle",
+    "template"
+  ],
+  "bugs": {
+    "url": "https://github.com/cneuro/farcebook/issues"
+  },
   "dependencies": {
     "bootstrap": "^5.2.2",
     "jotai": "^1.8.6",
