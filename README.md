@@ -208,4 +208,6 @@ Nevertheless, any contributions, suggestions and comments are very welcomed.
 
 ## License
 
-Farcebook &copy; 2022 is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+![CC BY-NC-SA 4.0](/public/by-nc-sa.eu.svg?raw=true)
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
