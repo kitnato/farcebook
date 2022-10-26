@@ -28,23 +28,12 @@
     "tsparticles-engine": "^2.3.3"
   },
   "devDependencies": {
+    "@cneuro/eslint-config-alpha": "^1.1.1",
     "@types/node": "^18.11.5",
     "@types/react": "^18.0.22",
     "@types/react-dom": "^18.0.7",
-    "@typescript-eslint/eslint-plugin": "^5.41.0",
-    "@typescript-eslint/parser": "^5.41.0",
     "@vitejs/plugin-react": "^2.1.0",
     "eslint": "^8.26.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-json": "^3.1.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "^7.31.10",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-sort-destructure-keys": "^1.4.0",
-    "eslint-plugin-sort-keys-fix": "^1.1.2",
-    "eslint-plugin-typescript-sort-keys": "^2.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
@@ -66,7 +55,7 @@
   "scripts": {
     "build": "vite build",
     "format": "prettier --write .",
-    "lint-code": "eslint --fix --ext .json,.ts,.tsx .",
+    "lint-code": "eslint --fix --ext .ts,.tsx .",
     "prepare": "husky install",
     "start": "vite"
   },

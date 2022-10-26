@@ -1,0 +1,3 @@
+{
+  "extends": "@cneuro/eslint-config-alpha"
+}
