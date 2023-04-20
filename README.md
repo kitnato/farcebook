@@ -198,13 +198,17 @@ Nevertheless, any contributions, suggestions and comments are very welcomed.
 
 - The app state management library is [Jotai](https://jotai.org).
 
-- Linting & its automation provided by [eslint](https://eslint.org/) and [prettier](https://prettier.io/).
+- Code style & linting is provided by [eslint](https://eslint.org/) and [prettier](https://prettier.io/).
 
-- Code style & linting automation is provided by [husky](https://typicode.github.io/husky/#/) and [lint-staged](https://www.npmjs.com/package/lint-staged).
+- Automation is provided by [husky](https://typicode.github.io/husky/#/) and [lint-staged](https://www.npmjs.com/package/lint-staged).
 
-- The [thumbs-up SVG icon](https://www.svgrepo.com/svg/352839/thumbs-up) is provided by FontAwesome under the CC Attribution License.
+- The [thumbs-up SVG icon](https://www.svgrepo.com/svg/352839/thumbs-up) is sourced from FontAwesome under the CC Attribution License.
 
 - The particle animation library is provided by [TypeScript Particles](https://github.com/matteobruni/tsparticles) and the endgame effect is shamelessly ripped off from [existing templates](https://particles.js.org/samples/presets/confetti.html).
+
+## Is it fun?
+
+...
 
 ## License
 

@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import { Col, Row } from "react-bootstrap";
 
 import { LOCALE, PRECISION } from "@farcebook/constants/GLOBAL";
 import { MEASUREMENT_DEVIATION, MEASUREMENT_SAMPLE } from "@farcebook/constants/MEASUREMENT";
 
-export default function SupportElement({ label, value }: { label: string; value: number }) {
+export function SupportElement({ label, value }: { label: string; value: number }) {
   const [values, setValues] = useState<number[]>([]);
 
   useEffect(() => {

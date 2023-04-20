@@ -3,9 +3,8 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 
 import { showGameOver } from "@farcebook/atoms/show";
-import { UIVariant } from "@farcebook/types";
 
-export default function DominanceAchieved() {
+export function DominanceAchieved() {
   const showGameOverValue = useAtomValue(showGameOver);
 
   return (
@@ -17,7 +16,7 @@ export default function DominanceAchieved() {
       <Modal.Body>Do it all over again?</Modal.Body>
 
       <Modal.Footer>
-        <Button onClick={() => window.location.reload()} variant={UIVariant.Outline}>
+        <Button onClick={() => window.location.reload()} variant="outline-primary">
           Um ...
         </Button>
       </Modal.Footer>

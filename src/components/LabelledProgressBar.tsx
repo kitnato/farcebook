@@ -1,17 +1,17 @@
-import ProgressBar from "react-bootstrap/ProgressBar";
+import { ProgressBar } from "react-bootstrap";
 
-import { UIVariant } from "@farcebook/types";
+import type { BootstrapColor } from "@farcebook/types";
 
-export default function LabelledProgressBar({
+export function LabelledProgressBar({
   isContinuous = false,
   label,
   value,
-  variant = UIVariant.Primary,
+  variant = "primary",
 }: {
   isContinuous?: boolean;
   label?: string;
   value: number;
-  variant?: UIVariant;
+  variant?: BootstrapColor;
 }) {
   return (
     <div className="position-relative w-100">

@@ -9,9 +9,9 @@ import {
   isInfluencersRateAtMaximum,
 } from "@farcebook/atoms/influencers";
 import { LOCALE, PRECISION } from "@farcebook/constants/GLOBAL";
-import useAnimation from "@farcebook/hooks/useAnimation";
+import { useAnimation } from "@farcebook/hooks/useAnimation";
 
-export default function InfluencersGeneration() {
+export function InfluencersGeneration() {
   const influencersValue = useAtomValue(influencers);
   const influencersEngagementValue = useAtomValue(influencersEngagement);
   const influencersRateValue = useAtomValue(influencersRate);
@@ -41,13 +41,12 @@ export default function InfluencersGeneration() {
 
   return (
     <span className="text-center">
-      Generating&nbsp;
       <strong className="font-monospace">
         {influencersEngagementValue.toLocaleString(LOCALE)}
       </strong>
       &nbsp;Engagement
       {influencersRateValue === 1000 ? (
-        " every second"
+        " per second"
       ) : isInfluencersRateAtMaximumValue ? (
         " continuously"
       ) : (
@@ -59,7 +58,6 @@ export default function InfluencersGeneration() {
           &nbsp;seconds
         </>
       )}
-      .
     </span>
   );
 }

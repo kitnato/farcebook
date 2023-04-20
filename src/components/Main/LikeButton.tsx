@@ -6,10 +6,10 @@ import { engagementDelta, engagementIncrement } from "@farcebook/atoms/engagemen
 import { clicksPerSecond } from "@farcebook/atoms/global";
 import { likeWeight } from "@farcebook/atoms/likes";
 import { LOCALE } from "@farcebook/constants/GLOBAL";
-import useMeasure from "@farcebook/hooks/useMeasure";
+import { useMeasure } from "@farcebook/hooks/useMeasure";
 import { ReactComponent as ThumbsUp } from "@farcebook/thumbs-up.svg";
 
-export default function LikeButton() {
+export function LikeButton() {
   const engagementDeltaValue = useAtomValue(engagementDelta);
   const engagementWeightValue = useAtomValue(likeWeight);
   const incrementEngagement = useSetAtom(engagementIncrement);

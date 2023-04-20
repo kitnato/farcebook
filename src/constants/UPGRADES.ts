@@ -1,14 +1,10 @@
-import Based from "@farcebook/components//Upgrades/Based";
-import Dank from "@farcebook/components//Upgrades/Dank";
-import Viral from "@farcebook/components//Upgrades/Viral";
-import Woke from "@farcebook/components//Upgrades/Woke";
-import { ElementKey, UpgradableElementKey } from "@farcebook/types";
+import { ElementKey, type UpgradableElementKey } from "@farcebook/types";
 
-export const UPGRADE_ORDER: { Component: React.FC; key: UpgradableElementKey }[] = [
-  { Component: Based, key: ElementKey.Based },
-  { Component: Viral, key: ElementKey.Viral },
-  { Component: Dank, key: ElementKey.Dank },
-  { Component: Woke, key: ElementKey.Woke },
+export const UPGRADE_ORDER: UpgradableElementKey[] = [
+  ElementKey.Based,
+  ElementKey.Viral,
+  ElementKey.Dank,
+  ElementKey.Woke,
 ];
 
 export const UPGRADE_LABELS: Record<UpgradableElementKey, { description: string; name: string }> = {

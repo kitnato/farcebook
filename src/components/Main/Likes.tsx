@@ -1,13 +1,13 @@
 import { useAtomValue } from "jotai";
-import Stack from "react-bootstrap/Stack";
+import { Stack } from "react-bootstrap";
 
 import { likes, likesPerSecond } from "@farcebook/atoms/likes";
-import Statistic from "@farcebook/components//Statistic";
+import { Statistic } from "@farcebook/components/Statistic";
 import { LOCALE } from "@farcebook/constants/GLOBAL";
-import useMeasureDifference from "@farcebook/hooks/useMeasureDifference";
+import { useMeasureDifference } from "@farcebook/hooks/useMeasureDifference";
 import { UIStatisticVariant } from "@farcebook/types";
 
-export default function Likes() {
+export function Likes() {
   const likesValue = useAtomValue(likes);
 
   useMeasureDifference(likesPerSecond, likesValue);

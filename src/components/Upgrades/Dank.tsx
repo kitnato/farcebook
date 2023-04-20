@@ -1,13 +1,13 @@
 import { useAtomValue } from "jotai";
-import Fade from "react-bootstrap/Fade";
+import { Fade } from "react-bootstrap";
 
 import { followersDeltaMultiplier } from "@farcebook/atoms/followers";
 import { showElement } from "@farcebook/atoms/show";
-import UpgradeContents from "@farcebook/components//Upgrades/UpgradeContents";
-import useNextUpgrade from "@farcebook/hooks/useNextUpgrade";
+import { UpgradeContents } from "@farcebook/components/Upgrades/UpgradeContents";
+import { useNextUpgrade } from "@farcebook/hooks/useNextUpgrade";
 import { ElementKey } from "@farcebook/types";
 
-export default function Dank() {
+export function Dank() {
   const showElementValue = useAtomValue(showElement);
 
   const isShowing = showElementValue[ElementKey.Dank];

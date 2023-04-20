@@ -1,4 +1,4 @@
-import { AcquirableElementKey, ElementKey } from "@farcebook/types";
+import { type AcquirableElementKey, ElementKey } from "@farcebook/types";
 
 export const COST: Record<AcquirableElementKey, { base: number; multiplier: number }> = {
   [ElementKey.Influencers]: { base: 250, multiplier: 1.5 },

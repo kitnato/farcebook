@@ -5,21 +5,26 @@ import { followersDeltaMultiplier } from "@farcebook/atoms/followers";
 import { influencers, influencersRateReduction } from "@farcebook/atoms/influencers";
 import { reachMultiplier } from "@farcebook/atoms/reach";
 import { COST } from "@farcebook/constants/COST";
-import { AcquirableElementKey, ElementKey } from "@farcebook/types";
+import { type AcquirableElementKey, ElementKey } from "@farcebook/types";
 
-export default function useAcquireCost(key: AcquirableElementKey) {
+export function useAcquireCost(key: AcquirableElementKey) {
   const rankAtom = (() => {
     switch (key) {
-      case ElementKey.Based:
+      case ElementKey.Based: {
         return influencersRateReduction;
-      case ElementKey.Dank:
+      }
+      case ElementKey.Dank: {
         return followersDeltaMultiplier;
-      case ElementKey.Influencers:
+      }
+      case ElementKey.Influencers: {
         return influencers;
-      case ElementKey.Viral:
+      }
+      case ElementKey.Viral: {
         return reachMultiplier;
-      case ElementKey.Woke:
+      }
+      case ElementKey.Woke: {
         return engagementMultiplier;
+      }
     }
   })();
   const rank = useAtomValue(rankAtom);

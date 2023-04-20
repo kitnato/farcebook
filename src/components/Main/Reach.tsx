@@ -1,7 +1,6 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useState } from "react";
-import Fade from "react-bootstrap/Fade";
-import Stack from "react-bootstrap/Stack";
+import { Fade, Stack } from "react-bootstrap";
 
 import { followersDelta } from "@farcebook/atoms/followers";
 import {
@@ -12,14 +11,14 @@ import {
   reachTotal,
 } from "@farcebook/atoms/reach";
 import { showElement } from "@farcebook/atoms/show";
-import LabelledProgressBar from "@farcebook/components//LabelledProgressBar";
+import { LabelledProgressBar } from "@farcebook/components/LabelledProgressBar";
 import { ATTRITION_TICK } from "@farcebook/constants/ATTRITION";
 import { REACH_PER_SECOND_CONTINUOUS } from "@farcebook/constants/REACH";
-import useAnimation from "@farcebook/hooks/useAnimation";
-import useMeasureDifference from "@farcebook/hooks/useMeasureDifference";
+import { useAnimation } from "@farcebook/hooks/useAnimation";
+import { useMeasureDifference } from "@farcebook/hooks/useMeasureDifference";
 import { ElementKey, ReachDeltaDirection } from "@farcebook/types";
 
-export default function Reach() {
+export function Reach() {
   const [reachCurrentValue, setReachCurrent] = useAtom(reachCurrent);
   const followersDeltaValue = useAtomValue(followersDelta);
   const reachDeltaValue = useAtomValue(reachDelta);
@@ -59,13 +58,13 @@ export default function Reach() {
 
         <Stack>
           <span>
-            <strong className="font-monospace">{reachDeltaValue}</strong> Reach per Engagement.
+            <strong className="font-monospace">{reachDeltaValue}</strong> Reach per Engagement
           </span>
 
           <span>
-            Maximum Reach generates&nbsp;
             <strong className="font-monospace">{followersDeltaValue}</strong>
-            {followersDeltaValue === 1 ? " Follower" : " Followers"}.
+            {followersDeltaValue === 1 ? " Follower" : " Followers"} per{" "}
+            <strong className="font-monospace">{reachMaximumValue}</strong> Reach
           </span>
         </Stack>
       </Stack>

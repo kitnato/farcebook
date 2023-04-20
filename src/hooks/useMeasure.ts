@@ -1,4 +1,4 @@
-import { PrimitiveAtom, useSetAtom } from "jotai";
+import { type PrimitiveAtom, useSetAtom } from "jotai";
 import { useCallback, useEffect, useState } from "react";
 
 import {
@@ -6,9 +6,9 @@ import {
   MEASUREMENT_TICK,
   MEASUREMENT_WINDOW,
 } from "@farcebook/constants/MEASUREMENT";
-import useAnimation from "@farcebook/hooks/useAnimation";
+import { useAnimation } from "@farcebook/hooks/useAnimation";
 
-export default function useMeasure(atom: PrimitiveAtom<number>) {
+export function useMeasure(atom: PrimitiveAtom<number>) {
   const setAtom = useSetAtom(atom);
 
   const [actions, setActions] = useState<[number, number][]>([]);

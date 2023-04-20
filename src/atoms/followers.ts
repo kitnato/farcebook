@@ -5,7 +5,7 @@ import {
   FOLLOWERS_DELTA_MULTIPLIER,
   FOLLOWERS_DELTA_MULTIPLIER_DELTA,
 } from "@farcebook/constants/FOLLOWERS";
-import { DeltaDirection } from "@farcebook/types";
+import type { DeltaDirection } from "@farcebook/types";
 
 export const followers = atom({
   current: 0,

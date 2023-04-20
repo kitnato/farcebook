@@ -1,5 +1,5 @@
 // TODO
 
-export default function Achievements() {
+export function Achievements() {
   return null;
 }

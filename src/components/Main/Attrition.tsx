@@ -1,16 +1,16 @@
 import { useAtom, useAtomValue } from "jotai";
 import { useEffect, useState } from "react";
-import Fade from "react-bootstrap/Fade";
+import { Fade } from "react-bootstrap";
 
 import { attrition, attritionGrace } from "@farcebook/atoms/attrition";
 import { showElement } from "@farcebook/atoms/show";
-import Statistic from "@farcebook/components//Statistic";
+import { Statistic } from "@farcebook/components/Statistic";
 import { ATTRITION_MAXIMUM, ATTRITION_RATE } from "@farcebook/constants/ATTRITION";
 import { PRECISION } from "@farcebook/constants/GLOBAL";
-import useAnimation from "@farcebook/hooks/useAnimation";
+import { useAnimation } from "@farcebook/hooks/useAnimation";
 import { ElementKey, UIStatisticVariant } from "@farcebook/types";
 
-export default function Attrition() {
+export function Attrition() {
   const [attritionValue, setAttrition] = useAtom(attrition);
   const [attritionGraceValue, changeAttritionGrace] = useAtom(attritionGrace);
   const showElementValue = useAtomValue(showElement);

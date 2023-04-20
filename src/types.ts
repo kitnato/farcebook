@@ -8,6 +8,8 @@ export enum AttritionDirection {
   Intensify,
 }
 
+export type BootstrapColor = "danger" | "outline-primary" | "primary";
+
 export enum ElementKey {
   Attrition,
   Based,
@@ -37,12 +39,6 @@ export enum UIStatisticVariant {
   Large,
   Normal,
   Small,
-}
-
-export enum UIVariant {
-  Outline = "outline-primary",
-  Primary = "primary",
-  Red = "danger",
 }
 
 export type UpgradableElementKey = Exclude<AcquirableElementKey, ElementKey.Influencers>;

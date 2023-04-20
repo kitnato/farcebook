@@ -1,19 +1,17 @@
-import { WritableAtom, useAtom } from "jotai";
-import Col from "react-bootstrap/Col";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Row from "react-bootstrap/Row";
-import Tooltip from "react-bootstrap/Tooltip";
-import AcquireButton from "@farcebook/components//AcquireButton";
+import { type WritableAtom, useAtom } from "jotai";
+import { Col, OverlayTrigger, Row, Tooltip } from "react-bootstrap";
+
+import { AcquireButton } from "@farcebook/components/AcquireButton";
 import { MAXIMUM } from "@farcebook/constants/GLOBAL";
 import { UPGRADE_LABELS } from "@farcebook/constants/UPGRADES";
-import { UpgradableElementKey } from "@farcebook/types";
+import type { UpgradableElementKey } from "@farcebook/types";
 
-export default function UpgradeContents({
+export function UpgradeContents({
   atom,
   elementKey,
   isAtMaximum = false,
 }: {
-  atom: WritableAtom<number, unknown>;
+  atom: WritableAtom<number, [unknown?], void>;
   elementKey: UpgradableElementKey;
   isAtMaximum?: boolean;
 }) {

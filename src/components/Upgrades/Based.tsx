@@ -1,13 +1,13 @@
 import { useAtomValue } from "jotai";
-import Fade from "react-bootstrap/Fade";
+import { Fade } from "react-bootstrap";
 
 import { influencersRateReduction, isInfluencersRateAtMaximum } from "@farcebook/atoms/influencers";
 import { showElement } from "@farcebook/atoms/show";
-import UpgradeContents from "@farcebook/components//Upgrades/UpgradeContents";
-import useNextUpgrade from "@farcebook/hooks/useNextUpgrade";
+import { UpgradeContents } from "@farcebook/components/Upgrades/UpgradeContents";
+import { useNextUpgrade } from "@farcebook/hooks/useNextUpgrade";
 import { ElementKey } from "@farcebook/types";
 
-export default function Based() {
+export function Based() {
   const isInfluencersRateAtMaximumValue = useAtomValue(isInfluencersRateAtMaximum);
   const showElementValue = useAtomValue(showElement);
 

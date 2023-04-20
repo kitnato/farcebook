@@ -2,6 +2,12 @@ body {
   user-select: none;
 }
 
+/* TODO - Workaround for https://github.com/react-bootstrap/react-bootstrap/issues/6563 */
+.popover,
+.tooltip {
+  position: fixed;
+}
+
 .progress {
   height: 1.3rem;
 }

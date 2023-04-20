@@ -3,12 +3,12 @@ import Fade from "react-bootstrap/Fade";
 
 import { likes } from "@farcebook/atoms/likes";
 import { showElement } from "@farcebook/atoms/show";
-import LabelledProgressBar from "@farcebook/components//LabelledProgressBar";
+import { LabelledProgressBar } from "@farcebook/components/LabelledProgressBar";
 import { LOCALE } from "@farcebook/constants/GLOBAL";
 import { LIKES_MAXIMUM } from "@farcebook/constants/LIKES";
-import { ElementKey, UIVariant } from "@farcebook/types";
+import { ElementKey } from "@farcebook/types";
 
-export default function Dominance() {
+export function Dominance() {
   const likesValue = useAtomValue(likes);
   const showElementValue = useAtomValue(showElement);
 
@@ -18,7 +18,7 @@ export default function Dominance() {
         <LabelledProgressBar
           label={`${likesValue.toLocaleString(LOCALE)} / ${LIKES_MAXIMUM.toLocaleString(LOCALE)}`}
           value={(likesValue / LIKES_MAXIMUM) * 100}
-          variant={UIVariant.Red}
+          variant="danger"
         />
       </div>
     </Fade>

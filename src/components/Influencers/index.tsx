@@ -1,18 +1,15 @@
 import { useAtomValue, useSetAtom } from "jotai";
 
-import Col from "react-bootstrap/Col";
-import Fade from "react-bootstrap/Fade";
-import Row from "react-bootstrap/Row";
-import Stack from "react-bootstrap/Stack";
+import { Col, Fade, Row, Stack } from "react-bootstrap";
 
 import { influencers } from "@farcebook/atoms/influencers";
 import { showElement } from "@farcebook/atoms/show";
-import AcquireButton from "@farcebook/components//AcquireButton";
-import InfluencersCount from "@farcebook/components//Influencers/InfluencersCount";
-import InfluencersGeneration from "@farcebook/components//Influencers/InfluencersGeneration";
+import { AcquireButton } from "@farcebook/components/AcquireButton";
+import { InfluencersCount } from "@farcebook/components/Influencers/InfluencersCount";
+import { InfluencersGeneration } from "@farcebook/components/Influencers/InfluencersGeneration";
 import { ElementKey } from "@farcebook/types";
 
-export default function Influencers() {
+export function Influencers() {
   const showElementValue = useAtomValue(showElement);
   const incrementInfluencers = useSetAtom(influencers);
 

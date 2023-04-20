@@ -1,6 +1,6 @@
 import { atom } from "jotai";
 
-import { ElementKey } from "@farcebook/types";
+import type { ElementKey } from "@farcebook/types";
 
 export const show = atom(null, (_, set, key: ElementKey) =>
   set(showElement, (current) => ({ ...current, [key]: true }))

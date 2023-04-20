@@ -1,14 +1,12 @@
 import { useAtom } from "jotai";
-import Button from "react-bootstrap/Button";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
+import { Button, OverlayTrigger, Tooltip } from "react-bootstrap";
 
 import { likes } from "@farcebook/atoms/likes";
 import { LOCALE } from "@farcebook/constants/GLOBAL";
-import useAcquireCost from "@farcebook/hooks/useAcquireCost";
-import { AcquirableElementKey, UIVariant } from "@farcebook/types";
+import { useAcquireCost } from "@farcebook/hooks/useAcquireCost";
+import type { AcquirableElementKey } from "@farcebook/types";
 
-export default function AcquireButton({
+export function AcquireButton({
   elementKey,
   increment,
   isSmall = false,
@@ -43,7 +41,7 @@ export default function AcquireButton({
           }}
           size={isSmall ? "sm" : undefined}
           style={{ width: isSmall ? 140 : 200 }}
-          variant={UIVariant.Outline}
+          variant="outline-primary"
         >
           Acquire
         </Button>

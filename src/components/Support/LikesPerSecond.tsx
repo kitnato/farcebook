@@ -1,12 +1,12 @@
 import { useAtomValue } from "jotai";
-import Fade from "react-bootstrap/Fade";
+import { Fade } from "react-bootstrap";
 
 import { likesPerSecond } from "@farcebook/atoms/likes";
 import { showElement } from "@farcebook/atoms/show";
-import SupportElement from "@farcebook/components//Support/SupportElement";
+import { SupportElement } from "@farcebook/components/Support/SupportElement";
 import { ElementKey } from "@farcebook/types";
 
-export default function LikesPerSecond() {
+export function LikesPerSecond() {
   const likesPerSecondValue = useAtomValue(likesPerSecond);
   const showElementValue = useAtomValue(showElement);
 

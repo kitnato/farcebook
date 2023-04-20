@@ -2,9 +2,9 @@ import { useSetAtom } from "jotai";
 import { useEffect } from "react";
 
 import { nextUpgrade } from "@farcebook/atoms/upgrades";
-import usePreviousValue from "@farcebook/hooks/usePreviousValue";
+import { usePreviousValue } from "@farcebook/hooks/usePreviousValue";
 
-export default function useNextUpgrade(isActive = false) {
+export function useNextUpgrade(isActive = false) {
   const setNextUpgrade = useSetAtom(nextUpgrade);
 
   const wasActive = usePreviousValue<boolean>(isActive);

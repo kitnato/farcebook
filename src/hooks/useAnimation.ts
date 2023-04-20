@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 
-export default function useAnimation(callback: (time: number) => void, stop?: boolean) {
+export function useAnimation(callback: (time: number) => void, stop?: boolean) {
   const frameRef = useRef(-1);
   const previousTimeRef = useRef(0);
 

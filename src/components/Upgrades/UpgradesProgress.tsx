@@ -1,6 +1,5 @@
 import { useAtomValue } from "jotai";
-import Fade from "react-bootstrap/Fade";
-import Stack from "react-bootstrap/Stack";
+import { Fade, Stack } from "react-bootstrap";
 
 import { likes } from "@farcebook/atoms/likes";
 import { showElement } from "@farcebook/atoms/show";
@@ -9,9 +8,9 @@ import { LOCALE } from "@farcebook/constants/GLOBAL";
 import { THRESHOLD } from "@farcebook/constants/THRESHOLD";
 import { ElementKey } from "@farcebook/types";
 
-export default function UpgradesProgress() {
+export function UpgradesProgress() {
   const likesValue = useAtomValue(likes);
-  const { key } = useAtomValue(nextUpgrade);
+  const nextUpgradeValue = useAtomValue(nextUpgrade);
   const showElementValue = useAtomValue(showElement);
 
   return (
@@ -24,7 +23,9 @@ export default function UpgradesProgress() {
         <span>Likes required for next Upgrade:</span>
 
         <span className="font-monospace">
-          {`${likesValue.toLocaleString(LOCALE)} / ${THRESHOLD[key].toLocaleString(LOCALE)}`}
+          {`${likesValue.toLocaleString(LOCALE)} / ${THRESHOLD[nextUpgradeValue].toLocaleString(
+            LOCALE
+          )}`}
         </span>
       </Stack>
     </Fade>
