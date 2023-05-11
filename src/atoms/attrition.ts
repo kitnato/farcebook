@@ -31,7 +31,7 @@ export const attrition = atomWithReducer(
 );
 
 export const attritionGrace = atomWithReducer(0, (current, delta?: number) => {
-  if (delta) {
+  if (delta !== undefined) {
     const newAttritionGrace = current - delta;
 
     if (newAttritionGrace < 0) {
