@@ -6,6 +6,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // eslint-disable-next-line import/no-default-export
 export default defineConfig({
+  base: "/farcebook/",
   plugins: [
     checker({
       eslint: { lintCommand: "eslint './src/**/*.{ts,tsx}'" },
