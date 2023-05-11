@@ -1,6 +1,6 @@
 {
   "name": "farcebook",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A basic template for a React & Typescript-based idle/incremental game.",
   "author": "Chris N",
   "license": "cc-by-sa-4.0",
@@ -8,6 +8,7 @@
     "type": "git",
     "url": "git+https://github.com/cneuro/farcebook.git"
   },
+  "homepage": "https://cneuro.github.io/farcebook",
   "keywords": [
     "clicker",
     "game",
@@ -20,7 +21,7 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.3",
-    "jotai": "^2.0.4",
+    "jotai": "^2.1.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
@@ -29,19 +30,19 @@
     "tsparticles-engine": "^2.9.3"
   },
   "devDependencies": {
-    "@cneuro/eslint-config-functional": "^1.7.0",
-    "@types/node": "^18.15.12",
-    "@types/react": "^18.0.37",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^3.1.0",
-    "eslint": "^8.38.0",
+    "@cneuro/eslint-config-functional": "^1.9.0",
+    "@types/node": "^20.1.2",
+    "@types/react": "^18.2.6",
+    "@types/react-dom": "^18.2.4",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.40.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.2.1",
-    "prettier": "^2.8.7",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
     "typescript": "^5.0.4",
-    "vite": "^4.3.0",
-    "vite-plugin-checker": "^0.5.6",
-    "vite-plugin-svgr": "^2.4.0",
+    "vite": "^4.3.5",
+    "vite-plugin-checker": "^0.6.0",
+    "vite-plugin-svgr": "^3.2.0",
     "vite-tsconfig-paths": "^4.2.0"
   },
   "lint-staged": {
@@ -71,5 +72,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": ">=16",
+    "npm": ">=8"
   }
 }
