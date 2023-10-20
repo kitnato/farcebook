@@ -7,7 +7,7 @@ import { clicksPerSecond } from "@farcebook/atoms/global";
 import { likeWeight } from "@farcebook/atoms/likes";
 import { LOCALE } from "@farcebook/constants/GLOBAL";
 import { useMeasure } from "@farcebook/hooks/useMeasure";
-import { ReactComponent as ThumbsUp } from "@farcebook/thumbs-up.svg";
+import ThumbsUp from "@farcebook/thumbs-up.svg?react";
 
 export function LikeButton() {
   const engagementDeltaValue = useAtomValue(engagementDelta);

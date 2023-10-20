@@ -13,7 +13,7 @@ A personal side-project, a proof-of-concept of a Typescript browser-based game. 
 To run the app locally, you will need a command-line interface (CLI) on any operating system, as well as [git](https://git-scm.com/downloads) and [NPM](https://docs.npmjs.com/cli/v8/configuring-npm/install) installed globally.
 
 1. Open the CLI and change into a suitable directory (e.g. "My Documents" folder)
-1. Run `git clone git@github.com:cneuro/farcebook.git`
+1. Run `git clone git@github.com:kitstigator/farcebook.git`
 1. Run `cd farcebook`
 1. Run `npm install`
 1. Run `npm start`
