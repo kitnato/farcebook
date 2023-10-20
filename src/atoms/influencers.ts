@@ -33,9 +33,9 @@ export const influencersRate = atom((get) => {
 // Determines Based rank
 export const influencersRateReduction = atomWithReducer(
   INFLUENCERS_RATE_REDUCTION,
-  (current) => current + INFLUENCERS_RATE_REDUCTION_DELTA
+  (current) => current + INFLUENCERS_RATE_REDUCTION_DELTA,
 );
 
 export const isInfluencersRateAtMaximum = atom(
-  (get) => get(influencersRate) === INFLUENCERS_RATE_MINIMUM
+  (get) => get(influencersRate) === INFLUENCERS_RATE_MINIMUM,
 );

@@ -58,7 +58,7 @@ export const reachCurrent = atom(
 
     set(reach, newReach);
     set(reachTotal, (current) => current + delta);
-  }
+  },
 );
 
 export const reachDelta = atom((get) => REACH_DELTA + REACH_DELTA * get(reachMultiplier));
@@ -71,7 +71,7 @@ export const reachMultiplier = atom(
       multiplier: multiplier + REACH_MULTIPLIER_DELTA,
       ...reachContents,
     }));
-  }
+  },
 );
 
 export const reachMaximum = atom(
@@ -81,7 +81,7 @@ export const reachMaximum = atom(
       maximum: maximum + REACH_MAXIMUM_DELTA,
       ...reachContents,
     }));
-  }
+  },
 );
 
 export const reachPerSecond = atom(0);

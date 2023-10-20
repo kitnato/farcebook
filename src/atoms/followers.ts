@@ -23,11 +23,11 @@ export const followersCurrent = atom(
         current: newFollowers < 0 ? 0 : newFollowers,
       };
     });
-  }
+  },
 );
 
 export const followersDelta = atom(
-  (get) => FOLLOWERS_DELTA + FOLLOWERS_DELTA * get(followersDeltaMultiplier)
+  (get) => FOLLOWERS_DELTA + FOLLOWERS_DELTA * get(followersDeltaMultiplier),
 );
 
 // Determines Dank rank
@@ -38,5 +38,5 @@ export const followersDeltaMultiplier = atom(
       deltaMultiplier: deltaMultiplier + FOLLOWERS_DELTA_MULTIPLIER_DELTA,
       ...followersContents,
     }));
-  }
+  },
 );

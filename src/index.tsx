@@ -11,5 +11,5 @@ const root = createRoot(document.getElementById("root") as Element);
 root.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
 );

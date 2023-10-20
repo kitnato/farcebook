@@ -24,7 +24,7 @@ export function UpgradesProgress() {
 
         <span className="font-monospace">
           {`${likesValue.toLocaleString(LOCALE)} / ${THRESHOLD[nextUpgradeValue].toLocaleString(
-            LOCALE
+            LOCALE,
           )}`}
         </span>
       </Stack>

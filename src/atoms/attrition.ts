@@ -27,7 +27,7 @@ export const attrition = atomWithReducer(
     }
 
     return newAttrition;
-  }
+  },
 );
 
 export const attritionGrace = atomWithReducer(0, (current, delta?: number) => {

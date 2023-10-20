@@ -32,14 +32,14 @@ export function useMeasure(atom: PrimitiveAtom<number>) {
           elapsed: Math.max(elapsed, now - timestamp),
           sum: sum + actions,
         }),
-        { elapsed: 0, sum: 0 }
+        { elapsed: 0, sum: 0 },
       );
 
       setAtom((sum / (Math.round(elapsed / 100) * 100)) * MEASUREMENT_RATE);
       setDelta(0);
 
       setActions((current) =>
-        current.filter(([timestamp]) => timestamp >= now - MEASUREMENT_WINDOW)
+        current.filter(([timestamp]) => timestamp >= now - MEASUREMENT_WINDOW),
       );
     }
   }, [actions, delta, noActions, setAtom]);
@@ -48,6 +48,6 @@ export function useMeasure(atom: PrimitiveAtom<number>) {
     (change: number) => {
       setActions((current) => [...current, [Date.now(), change]]);
     },
-    [setActions]
+    [setActions],
   );
 }

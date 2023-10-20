@@ -15,7 +15,7 @@ import { AttritionDirection } from "@farcebook/types";
 export const engagement = atom(0);
 
 export const engagementDelta = atom(
-  (get) => ENGAGEMENT_DELTA + ENGAGEMENT_DELTA * get(engagementMultiplier)
+  (get) => ENGAGEMENT_DELTA + ENGAGEMENT_DELTA * get(engagementMultiplier),
 );
 
 export const engagementIncrement = atom(null, (get, set) => {
@@ -32,7 +32,7 @@ export const engagementIncrement = atom(null, (get, set) => {
 // Determines Woke
 export const engagementMultiplier = atomWithReducer(
   ENGAGEMENT_MULTIPLIER,
-  (current) => current + ENGAGEMENT_MULTIPLIER_DELTA
+  (current) => current + ENGAGEMENT_MULTIPLIER_DELTA,
 );
 
 export const engagementPerSecond = atom(0);

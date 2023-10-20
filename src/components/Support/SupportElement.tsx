@@ -27,7 +27,7 @@ export function SupportElement({ label, value }: { label: string; value: number 
 
     const mean = values.reduce((a, b) => a + b, 0) / n;
     const deviation = Math.sqrt(
-      values.map((x) => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / n
+      values.map((x) => Math.pow(x - mean, 2)).reduce((a, b) => a + b, 0) / n,
     );
 
     if (deviation > MEASUREMENT_DEVIATION) {

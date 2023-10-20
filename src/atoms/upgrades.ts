@@ -18,5 +18,5 @@ export const nextUpgrade = atom(
 
       return current + 1;
     });
-  }
+  },
 );
